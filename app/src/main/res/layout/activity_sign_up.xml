@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:padding="15dp"
+    android:background="#9C27B0">
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/design_button"
+        android:drawableLeft="@android:drawable/ic_lock_lock"
+        android:onClick="btnRegister"
+        android:text="Đăng kí"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:backgroundTint="#FF9800"
+        app:strokeColor="#701580"
+        app:strokeWidth="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="BKAP Bank"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Internet Banking"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="30dp"/>
+        <EditText
+            android:id="@+id/frmHoTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Họ và tên"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"
+            android:inputType="textCapWords"/>
+        <EditText
+            android:id="@+id/frmCMND"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CMND / Hộ chiếu"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:inputType="none" />
+        <EditText
+            android:id="@+id/frmEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email / Tên đăng nhập"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/frmMK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật Khẩu"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:inputType="textPassword" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPassword"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkDKien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:checked="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Tôi đồng ý với điều khoản, điều kiện của ngân hàng BKAP Bank"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

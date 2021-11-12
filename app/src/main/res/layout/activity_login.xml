@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C27B0"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="BKAP Bank"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Internet Banking"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="30dp"/>
+    <EditText
+        android:id="@+id/formTenDN"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên đăng nhập"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:inputType="textCapWords"/>
+    <EditText
+        android:id="@+id/formMK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mật khẩu"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:inputType="textCapWords"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/design_button"
+        android:drawableLeft="@android:drawable/ic_lock_lock"
+        android:text="Đăng nhập"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:backgroundTint="#FF9800"
+        app:strokeColor="#701580"
+        app:strokeWidth="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/btnDangKi"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng kí"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:gravity="right"
+            android:onClick="actionRegister"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
